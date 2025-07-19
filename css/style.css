@@ -1,0 +1,43 @@
+/* --- VARIABLES GLOBALES --- */
+:root {
+    /* Paleta de Colores */
+    --color-principal: #7030A0; /* Violeta */
+    --color-secundario-principal: #09CBD9; /* Azul */
+    --color-secundario: #FF1895; /* Rosa */
+    --color-auxiliar: #FEF100; /* Amarillo */
+    
+    /* Colores de Texto y Fondo (provisionales) */
+    --color-texto: #333333;
+    --color-fondo: #FFFFFF;
+
+    /* Tipografías */
+    --font-principal: 'Ubuntu', sans-serif;
+    --font-secundaria: 'Ubuntu Mono', monospace;
+    --font-parrafos: 'Lora', serif;
+}
+
+/* --- RESET BÁSICO Y ESTILOS GLOBALES --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px; /* Define el tamaño de fuente base */
+    scroll-behavior: smooth; /* Desplazamiento suave para anclas */
+}
+
+body {
+    font-family: var(--font-parrafos); /* Fuente por defecto para textos largos */
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-principal); /* Fuente por defecto para títulos */
+    line-height: 1.2;
+}
